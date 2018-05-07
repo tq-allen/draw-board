@@ -60,7 +60,7 @@ download.onclick = function(){
 	var a = document.createElement('a')
 	a.href = url
 	a.download = '画板保存的画'
-	// a.target = '_blank'
+	a.target = '_blank'
 	a.click()
 }
 //选择画笔颜色、画笔粗细
