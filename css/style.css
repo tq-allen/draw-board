@@ -1,0 +1,100 @@
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#canvas{
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.actions{
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 20px 0;
+}
+.actions .icon{
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 10px;
+	transition: all .3s;
+}
+.actions .icon.active{
+	fill: red;
+	transform: scale(1.2);
+}
+
+.color-board{
+	position: fixed;
+	top: 60px;
+	left: 10px;
+}
+.color-board span{
+	margin: 15px 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	border-radius: 50%;
+	vertical-align: middle;
+	transition: all .3s;
+}
+.color-board span.active{
+	transform: scale(1.3)
+}
+#blue{
+	background: blue;
+}
+#green{
+	background: green;
+}
+#pink{
+	background: pink;
+}
+#black{
+	background: black;
+}
+.sizes{
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 20px;
+}
+.sizes span{
+	height: 0;
+	width: 20px;
+	display: block;
+	padding: 10px 0;
+	transition: all .3s;
+}
+.sizes span::before{
+	content: '';
+	width: 20px;
+	background: black;
+	display: block;
+}
+.sizes span#thin::before{
+	height: 1px;
+}
+.sizes span#middle::before{
+	height: 3px;
+}
+.sizes span#bold::before{
+	height: 5px;
+}
+.sizes span.active{
+	transform: rotate(30deg)
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>draw board</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<div class="actions">	
+		<svg id="pen" class="active icon"><use xlink:href="#icon-pen"></use></svg>
+		<svg id="eraser" class="icon"><use xlink:href="#icon-eraser"></use></svg>
+		<svg id="clear" class="icon"><use xlink:href="#icon-clear"></use></svg>
+		<svg id="download" class="icon"><use xlink:href="#icon-download"></use></svg>
+	</div>
+	<div class="color-board">
+		<span id="blue"></span>
+		<span id="green"></span>
+		<span id="pink"></span>
+		<span class="active" id="black"></span>
+	</div>
+	<div class="sizes">
+		<span id="thin"></span>
+		<span id="middle"></span>
+		<span id="bold"></span>
+	</div>
+
+	<script src="js/index.js"></script>
+	<script src="//at.alicdn.com/t/font_656188_5friradigrvpwrk9.js"></script>
+</body>
+</html>
